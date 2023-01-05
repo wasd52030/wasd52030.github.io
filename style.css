@@ -1,0 +1,100 @@
+body {
+    font-family: Helvetica;
+    font-size: 18px;
+}
+
+img {
+    height: 65px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    border: 1px solid #e9e9e9;
+    border-radius: 0.28571rem;
+    box-shadow: 0px 1px 2px 0 #f1f0f0;
+    transition: box-shadow .1s ease, transform .1s ease;
+    color: #5a5a5a;
+    background: #fff;
+    border-color: #e9e9e9;
+}
+
+.card h2 {
+    margin: 15px;
+}
+
+.research {
+    width: 630px;
+}
+
+.education {
+    width: 630px;
+}
+
+.award {
+    width: 630px;
+}
+
+.certificate {
+    width: 630px;
+}
+
+.biography .card {
+    margin: 5px;
+}
+
+.biography .card ul li {
+    margin: 10px;
+}
+
+.research ul {
+    list-style: none;
+    margin-left: -2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.research li {
+    width: 20%;
+    margin: 15px;
+    text-align: center;
+}
+
+.research li img {
+    box-sizing: border-box;
+}
+
+.self {
+    width: 630px;
+}
+
+.self a {
+    text-decoration: none;
+}
+
+.self a:link {
+    color: blue
+}
+
+.self a:visited {
+    color: blue
+}
+
+.self a:hover {
+    color: blue
+}
+
+.self a:active {
+    color: blue
+}
