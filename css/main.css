@@ -1210,8 +1210,10 @@ pre code {
 .site-brand-container {
   display: flex;
   flex-shrink: 0;
+  padding: 0 10px;
 }
-.use-motion .column {
+.use-motion .column,
+.use-motion .site-brand-container .toggle {
   opacity: 0;
 }
 .site-meta {
@@ -1260,25 +1262,27 @@ pre code {
   top: -10px;
 }
 .site-nav-toggle,
-.site-nav-search {
-  color: var(--text-color);
+.site-nav-right {
   display: none;
-  padding: 0 10px;
-}
-.site-nav-toggle .fa,
-.site-nav-search .fa {
-  transition: transform 0.5s;
 }
 @media (max-width: 767px) {
   .site-nav-toggle,
-  .site-nav-search {
+  .site-nav-right {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 }
-.site-nav-on .site-nav-toggle .fa {
-  transform: rotate(-90deg);
+.site-nav-toggle .toggle,
+.site-nav-right .toggle {
+  color: var(--text-color);
+  padding: 10px;
+  width: 22px;
+}
+.site-nav-toggle .toggle .toggle-line,
+.site-nav-right .toggle .toggle-line {
+  background: var(--text-color);
+  border-radius: 1px;
 }
 @media (max-width: 767px) {
   .site-nav {
@@ -1381,7 +1385,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #c2bbf2;
+    background: #ffff06;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -2341,24 +2345,12 @@ pre code {
   max-width: 100%;
   width: 180px;
 }
-@keyframes next-bounce {
-  0%, 100% {
-    transform: translateY(0) scale(1);
+@keyframes next-roll {
+  from {
+    transform: rotateZ(30deg);
   }
-  12% {
-    transform: translateY(0) scale(1.04, 0.96);
-  }
-  36% {
-    transform: translateY(-7px) scale(0.98, 1.02);
-  }
-  58% {
-    transform: translateY(0) scale(1.03, 0.97);
-  }
-  72% {
-    transform: translateY(-2px) scale(1);
-  }
-  84% {
-    transform: translateY(0) scale(1);
+  to {
+    transform: rotateZ(-30deg);
   }
 }
 .category-all-page .category-all-title {
@@ -2684,17 +2676,21 @@ header.header {
 .site-meta {
   padding: 20px 0;
 }
-.site-nav-toggle,
-.site-nav-search {
-  color: #fff;
-}
 @media (min-width: 768px) and (max-width: 991px) {
   .site-nav-toggle,
-  .site-nav-search {
+  .site-nav-right {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
+}
+.site-nav-toggle .toggle,
+.site-nav-right .toggle {
+  color: #fff;
+}
+.site-nav-toggle .toggle .toggle-line,
+.site-nav-right .toggle .toggle-line {
+  background: #fff;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .site-nav {
