@@ -285,7 +285,7 @@
     <div class="post-body" itemprop="articleBody">
           <h2 id="文章圖片放置"><a class="markdownIt-Anchor" href="#文章圖片放置"></a> 文章圖片放置</h2>
 <p>檔案結構 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>↓</mo></mrow><annotation encoding="application/x-tex">\downarrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mrel">↓</span></span></span></span></p>
-<img src="/assets/hexo-memories/hexo-source-struct.png" style="display:block; margin-left:0;" />
+<img src="/assets/hexo-memories/hexo-source-struct.png" style="display:block; margin-left:0;">
 <p>需使用 <code>/assets/.../...</code> 確保圖片在預覽及文章內都讀得到</p>
 <h2 id="ref"><a class="markdownIt-Anchor" href="#ref"></a> ref</h2>
 <ol>
@@ -293,6 +293,14 @@
 <li><a target="_blank" rel="noopener" href="https://aidens-fox.codeberg.page/posts/885fb84e.html">https://aidens-fox.codeberg.page/posts/885fb84e.html</a></li>
 </ol>
 
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2026/10/12/hexo-memories/#more" rel="contents">
+                閱讀全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -407,22 +415,14 @@
 <ul>
 <li>啟動已存在的 container</li>
 </ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker start &lt;containerId&gt;</span><br></pre></td></tr></table></figure>
-<ul>
-<li>進入已啟動的 container</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker exec -it &lt;containerId&gt; bash</span><br></pre></td></tr></table></figure>
-<ul>
-<li><code>-d</code>參數可以使 container 背景執行</li>
-<li>port mapping</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -d -p 8080:80 apache</span><br></pre></td></tr></table></figure>
-<p><img src="/assets/docker-memories/docker-port-mapping.png" alt="image" /></p>
-<ul>
-<li><strong>利用 docker run 創建新的 container 的附帶條件(device、volume)已經被記錄下來</strong></li>
-<li><strong>利用 docker start 啟動已經存在的 container 時不用再次指定</strong></li>
-</ul>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2026/10/12/docker-memories/#more" rel="contents">
+                閱讀全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -525,7 +525,7 @@
 <li>兩種啟動方式皆可
 <ol>
 <li>雙擊<code>start.desktop</code></li>
-<li>進入剛才解壓縮的資料夾，使用下面指令啟動(source: 資料夾內的<code>start.desktop</code>)<br />
+<li>進入剛才解壓縮的資料夾，使用下面指令啟動(source: 資料夾內的<code>start.desktop</code>)<br>
 <code>bash -c 'cd &quot;$(dirname &quot;$1&quot;)&quot; &amp;&amp; ./start.sh' dummy %k</code></li>
 </ol>
 </li>
@@ -538,6 +538,14 @@
 <li><a target="_blank" rel="noopener" href="https://ivonblog.com/posts/linux-desktop-entry/">https://ivonblog.com/posts/linux-desktop-entry/</a></li>
 </ul>
 
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2026/10/12/linux-moica-hicos/#more" rel="contents">
+                閱讀全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -634,7 +642,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>這玩意可以在 android 上面開 shell 來用，有時候還蠻有用的<br />
+          <p>這玩意可以在 android 上面開 shell 來用，有時候還蠻有用的<br>
 為了不要每次 init 都要查，稍微記一下好了</p>
 <h2 id="存取手機檔案"><a class="markdownIt-Anchor" href="#存取手機檔案"></a> 存取手機檔案</h2>
 <p>使用 <code>termux-setup-storage</code> 指令，隨後允許 termux 存取手機檔案，再下 ls 即可看到 storage 資料夾在家目錄，裡面的結構基本與檔案總管的無異</p>
@@ -648,13 +656,19 @@
 </ol>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chsh -s fish</span><br></pre></td></tr></table></figure>
 <ol start="3">
-<li>abbr設置<br />
-<strong>nano 僅作為範例，喜歡用 vim 或 emacs 又或是其他114514種 editor，請隨意</strong><br />
+<li>abbr設置<br>
+<strong>nano 僅作為範例，喜歡用 vim 或 emacs 又或是其他114514種 editor，請隨意</strong><br>
 利用nano 開啟：<code>nano ~/.config/fish/config.fish</code>，輸入以下內容</li>
 </ol>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">if status is-interactive</span><br><span class="line">    # Commands to run in interactive sessions can go here</span><br><span class="line">    abbr --add dir &quot;ls -alF&quot;</span><br><span class="line">    abbr --add cls clear</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
-<p>存檔後利用 <code>source ~/.config/fish/config.fish</code> 指令啟用</p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2026/10/12/termux-init/#more" rel="contents">
+                閱讀全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -751,14 +765,14 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>個人習慣！！！<br><br />
-個人習慣！！！<br><br />
+          <p>個人習慣！！！<br><br>
+個人習慣！！！<br><br>
 個人習慣！！！</p>
 <h2 id="distro"><a class="markdownIt-Anchor" href="#distro"></a> distro</h2>
 <p>緊跟隨 linus 的領導，選用 fedora，desktop 選用 KDE，新 GNOME 實在用不太習慣</p>
 <h2 id="kernel"><a class="markdownIt-Anchor" href="#kernel"></a> kernel</h2>
-<p>由於主力喇叭 RAZER Leviathan V2 X 在 7.x 版本的 kernel 中表現不太理想，時常斷線聲音還小，先用 6.x 頂著，且聽聞 cachyos 的 kernel 有特殊技巧能跑得快，且 fedora rpm 裡面剛好有，NTR大法好XD，目前用起來感覺跟 fedora 官方的版本沒啥差就是了<br />
-<img src="/assets/linux-init/fedora-fastfetch.png" alt="圖片" /></p>
+<p>由於主力喇叭 RAZER Leviathan V2 X 在 7.x 版本的 kernel 中表現不太理想，時常斷線聲音還小，先用 6.x 頂著，且聽聞 cachyos 的 kernel 有特殊技巧能跑得快，且 fedora rpm 裡面剛好有，NTR大法好XD，目前用起來感覺跟 fedora 官方的版本沒啥差就是了<br>
+<img src="/assets/linux-init/fedora-fastfetch.png" alt="圖片"></p>
 <h2 id="terminal"><a class="markdownIt-Anchor" href="#terminal"></a> terminal</h2>
 <ul>
 <li>基本安裝、設定(以ubuntu為例) -&gt; <a target="_blank" rel="noopener" href="https://www.kwchang0831.dev/dev-env/ubuntu/fish">https://www.kwchang0831.dev/dev-env/ubuntu/fish</a>
@@ -770,43 +784,21 @@
 <li>對 shell 主題的印象不是太好，有種性能不太行的美，目前裝完 fish 跟 fisher 就先收工</li>
 </ul>
 </li>
-<li>abbr設置<br />
-<strong>nano 僅作為範例，喜歡用 vim 或 emacs 又或是其他114514種 editor，請隨意</strong><br />
+<li>abbr設置<br>
+<strong>nano 僅作為範例，喜歡用 vim 或 emacs 又或是其他114514種 editor，請隨意</strong><br>
 利用nano開啟：<code>nano ~/.config/fish/config.fish</code>，輸入以下內容</li>
 </ul>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">if status is-interactive</span><br><span class="line">    # Commands to run in interactive sessions can go here</span><br><span class="line">    abbr --add dir &quot;ls -alF&quot;</span><br><span class="line">    abbr --add cls clear</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
 <p>存檔後利用 <code>source ~/.config/fish/config.fish</code> 指令啟用</p>
 <h2 id="輸入法"><a class="markdownIt-Anchor" href="#輸入法"></a> 輸入法</h2>
-<ul>
-<li>fcitx5 -&gt; <a target="_blank" rel="noopener" href="https://ivonblog.com/posts/ubuntu-fcitx5/">https://ivonblog.com/posts/ubuntu-fcitx5/</a></li>
-<li>mcbopomofo -&gt; <a target="_blank" rel="noopener" href="https://github.com/openvanilla/McBopomofo">https://github.com/openvanilla/McBopomofo</a></li>
-<li>候選視窗可以改成類微軟注音的選字窗，而不是拼音的樣式<br />
-<img src="/assets/linux-init/mcbopomofo.png" alt="圖片" /><br />
-<img src="/assets/linux-init/bopomofo-select.png" alt="圖片" /><br />
-<img src="/assets/linux-init/pinyin-select.png" alt="圖片" /></li>
-</ul>
-<h2 id="kde微調"><a class="markdownIt-Anchor" href="#kde微調"></a> kde微調</h2>
-<h3 id="螢幕"><a class="markdownIt-Anchor" href="#螢幕"></a> 螢幕</h3>
-<ul>
-<li>kde預設螢幕左上角會有行為，要關掉來這邊調<br />
-<img src="/assets/linux-init/kde-screen-edge.png" alt="圖片" /></li>
-</ul>
-<h3 id="截圖"><a class="markdownIt-Anchor" href="#截圖"></a> 截圖</h3>
-<ol>
-<li>kde 內建的 spectacle 預設儲存截圖、截完圖一定會跳視窗等行為實在挺煩躁的，可以加裝flameshot 作主力，spectacle作輔助<br />
-<img src="/assets/linux-init/flameshot-first.png" alt="圖片" /><br />
-<img src="/assets/linux-init/spectacle-sub.png" alt="圖片" /></li>
-</ol>
-<h3 id="krunner"><a class="markdownIt-Anchor" href="#krunner"></a> krunner</h3>
-<p>預設 alt+space 打開，類似 windows 的 PowerToys Run，krunner 預設置頂，可以調成類似 PowerToys Run 的置中<br />
-<img src="/assets/linux-init/krunner-top.png" alt="圖片" /><br />
-<img src="/assets/linux-init/krunner-setting.png" alt="圖片" /><br />
-<img src="/assets/linux-init/krunner-middle.png" alt="圖片" /></p>
-<h2 id="nodejs"><a class="markdownIt-Anchor" href="#nodejs"></a> nodejs</h2>
-<p>由於使用 fish，nvm 有特殊的技巧，需使用到 terminal 章節 fish 設定文章提到的 <code>fisher</code> ，也就是 fish 專用的套件管理器<br />
-參考 <a target="_blank" rel="noopener" href="https://github.com/jorgebucaran/nvm.fish">nvm.fisher官方github</a>，使用以下指令即可安裝(需事先安裝好 fish)</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fisher install jorgebucaran/nvm.fish</span><br></pre></td></tr></table></figure>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2026/10/12/linux-init/#more" rel="contents">
+                閱讀全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
